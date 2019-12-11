@@ -16,15 +16,15 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary class="primary">
+    <v-navigation-drawer app clipped permanent  v-model="drawer"  class="primary">
       <v-list dense>
         <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
           <v-list-item-icon>
             <v-icon color="white">{{ link.icon }}</v-icon>
           </v-list-item-icon>
 
-          <v-list-item-content class="white--text">
-            <v-list-item-title>{{ link.text }}</v-list-item-title>
+          <v-list-item-content >
+            <v-list-item-title class="white--text">{{ link.text }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
