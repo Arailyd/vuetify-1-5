@@ -13,8 +13,8 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary class="indigo">
-      <p>test</p>
+    <v-navigation-drawer v-model="drawer" absolute temporary class="primary">
+      <p class="success">test</p>
     </v-navigation-drawer>
   </nav>
 </template>
